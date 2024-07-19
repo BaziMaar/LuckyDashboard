@@ -15,7 +15,7 @@ const BannerManager = () => {
 
   const fetchUpiList = async () => {
     try {
-      const response = await axios.get('https://sattajodileak.com/user/getBanner', {
+      const response = await axios.get('https://ajayluckybrust.today/user/getBanner', {
         headers: {
           'Authorization': `Bearer ${API_KEY}`
         }
@@ -31,7 +31,7 @@ const BannerManager = () => {
 
   const addUpi = async () => {
     try {
-      await axios.post('https://sattajodileak.com/user/postBanner', 
+      await axios.post('https://ajayluckybrust.today/user/postBanner', 
         { banner: newUpi },
         {
           headers: {
@@ -50,7 +50,7 @@ const BannerManager = () => {
 
   const deleteUpi = async (upiToDelete) => {
     try {
-      await axios.post('https://sattajodileak.com/user/removeBanner', 
+      await axios.post('https://ajayluckybrust.today/user/removeBanner', 
         { banner: upiToDelete },
         {
           headers: {
